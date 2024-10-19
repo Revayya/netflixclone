@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: black;
+      }
+      header {
+        border: 2px solid black;
+        background-image: url(the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-414w-2x.jpg);
+        background-size: max(1200px, 100vw);
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 80vh;
+        position: relative;
+        /* opacity: 0.69; */
+        /* background-color: black; */
+      }
+      header .ctn{
+        position: absolute;
+        top: 0;
+        height: 80vh;
+        width: 100%;
+        opacity: 0.69;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: min(800px);
+        width: min(500px);
+        /* border: 2px solid white; */
+        border-radius: 4px;
+        gap: 10px;
+      }
+      .items h1 {
+        margin: 50px;
+        display: flex;
+        text-align: start;
+        color: white;
+        font-weight: bolder;
+        font-family: 'Segoe UI';
+        display: block;
+        justify-self: flex-start;
+      }
+      .inputbox input{
+        border: 1px solid gray;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin:4px auto;
+        /* margin-top: 10px; */
+        width: 40vh;
+        padding: 20px 90px 20px 10px;
+        color: white;
+        border-radius: 4px;
+        font-family: "Segoe UI";
+        font-size: large;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+        width: 25vw;
+        height: 10px;
+        padding: 30px 120px;
+        font-weight: bolder;
+        font-size: 15px;
+        font-family: 'Segoe UI';
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .items button:hover{
+        background-color: rgb(193, 48, 48);
+      }
+      .items p{
+        color: gray;
+        font-size: 18px;
+      }
+      .items a{
+        margin: 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .items a:hover{
+        text-decoration: underline;
+        color: blueviolet;
+      }
+      .items span{
+        color: white;
+        font-size: 20px;
+      }
+      .chk{
+        padding: 20px;
+      }
+      .ctn img{
+        position:relative;
+        top: -250px;
+        left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <div class="ctn">
+        <img src="assets/images/logo.svg" alt="" height="40px" style="background-color: rgba(0, 0, 0, 0);">
+        <div class="container">
+          <div class="items">
+            <h1>Sign In</h1>
+          </div>
+          <div class="items inputbox">
+            <input
+              type="text"
+              class="name"
+              placeholder="Email or mobile number"
+            />
+          </div>
+          <div class="items inputbox">
+            <input type="password" class="psw" placeholder="password" />
+          </div>
+          <div class="items">
+            <button>Sign In</button>
+          </div>
+          <div class="items">
+            <p>or</p>
+          </div>
+          <div class="items">
+            <button>Use a sign-in code</button>
+          </div>
+          <div class="items">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="items">
+            <input type="checkbox" class="chk" />
+            <span>Remember me</span>
+          </div>
+          <div class="items">
+            <span>New to Netflix?</span>
+            <a href="#"> Sign up now</a>
+          </div>
+          <div class="items">
+            <p>
+              This page is protected by Google reCAPTCHA to ensure you're not a
+              bot.
+              <a href="#" class="q">Learn more.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
